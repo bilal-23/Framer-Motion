@@ -9,7 +9,7 @@ export default function ScrollEffectOnReveal() {
       <h1>Reveal Effect On Scroll</h1>
       <div className="space-y-4">
         <Reveal>
-          <h1>Hey, I am Bilal</h1>
+          <h1>Hey, You</h1>
         </Reveal>
         <Reveal>
           <p>
