@@ -9,7 +9,7 @@ const links = [
 
 export default function Home() {
   return (
-    <main className="flex h-lvh flex-col gap-8 p-10">
+    <main className="flex flex-col gap-8 p-10">
       <h1>Framer Motion Tutorial</h1>
       <ul>
         {links.map((link) => {

@@ -3,7 +3,11 @@ import type { Metadata } from "next"
 import { OutfitFont } from "@/lib/fonts"
 
 import "./globals.css"
+import NextTopLoader from "nextjs-toploader"
+
 import { cn } from "@/lib/utils"
+import { Header } from "@/components/header/header"
+import { ThemeProvider } from "@/components/theme/theme-provider"
 
 export const metadata: Metadata = {
   title: "Framer Motion Animation",
@@ -19,11 +23,19 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "container mx-auto px-4 font-outfit antialiased",
+          "mx-auto min-h-lvh font-outfit antialiased",
           OutfitFont.variable
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
+          <NextTopLoader
+            color="hsl(var(--primary))"
+            height={2}
+            showSpinner={false}
+          />
+          <Header />
+          <div className="container flex-1">{children}</div>
+        </ThemeProvider>
       </body>
     </html>
   )

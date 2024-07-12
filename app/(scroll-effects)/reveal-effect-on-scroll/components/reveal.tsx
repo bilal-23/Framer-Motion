@@ -44,7 +44,7 @@ export function Reveal({ children, width = "fit-content" }: Props) {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute inset-x-0 inset-y-[4px] z-20 bg-slate-300"
+        className="absolute inset-x-0 inset-y-[4px] z-20 bg-muted-foreground"
       ></motion.div>
     </div>
   )

@@ -1,6 +1,6 @@
 "use client"
 
-import { CodeBlockContainer } from "./components/code-block"
+// import { CodeBlockContainer } from "./components/code-block"
 import { Reveal } from "./components/reveal"
 
 export default function ScrollEffectOnReveal() {
@@ -9,7 +9,7 @@ export default function ScrollEffectOnReveal() {
       <h1>Reveal Effect On Scroll</h1>
       <div className="space-y-4">
         <Reveal>
-          <h1>Hey, You</h1>
+          <h2>Hey, You</h2>
         </Reveal>
         <Reveal>
           <p>
@@ -20,7 +20,7 @@ export default function ScrollEffectOnReveal() {
           </p>
         </Reveal>
       </div>
-      <CodeBlockContainer />
+      {/* <CodeBlockContainer /> */}
       <Reveal>
         <div className="grid place-items-center">
           <p>
