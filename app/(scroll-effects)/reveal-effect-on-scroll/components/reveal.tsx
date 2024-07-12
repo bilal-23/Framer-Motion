@@ -1,5 +1,6 @@
-import { motion, useAnimationControls, useInView } from "framer-motion"
 import { useEffect, useRef } from "react"
+import { motion, useAnimationControls, useInView } from "framer-motion"
+
 interface Props {
   children: React.ReactNode
   width?: "fit-content" | "100%"
@@ -43,7 +44,7 @@ export function Reveal({ children, width = "fit-content" }: Props) {
         initial="hidden"
         animate={slideControls}
         transition={{ duration: 0.5, ease: "easeIn" }}
-        className="absolute bottom-[4px] left-0 right-0 top-[4px] z-20 bg-slate-300"
+        className="absolute inset-x-0 inset-y-[4px] z-20 bg-slate-300"
       ></motion.div>
     </div>
   )

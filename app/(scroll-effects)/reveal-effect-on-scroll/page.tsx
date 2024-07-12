@@ -1,7 +1,7 @@
 "use client"
-import { motion } from "framer-motion"
-import { Reveal } from "./components/reveal"
+
 import { CodeBlockContainer } from "./components/code-block"
+import { Reveal } from "./components/reveal"
 
 export default function ScrollEffectOnReveal() {
   return (
