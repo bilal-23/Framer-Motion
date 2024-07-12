@@ -1,17 +1,28 @@
 "use client"
 
-import { TutorialLink } from "@/components/ui/tutorial-link"
+import { CONSTANTS } from "@/constants"
+
+import Heading from "@/components/tutorial-page/Heading"
 
 // import { CodeBlockContainer } from "./components/code-block"
 import { Reveal } from "./components/reveal"
 
+const youtubeUrl =
+  CONSTANTS.YOUTUBE +
+  "hjbxaYTMhy0&list=PLA4qBVt61k3Phpwt7uqaptIg9NYZ5aNu_&index=1&pp=iAQB"
+const githubUrl =
+  CONSTANTS.GITHUB + "/(scroll-effects)/reveal-effect-on-scroll/page.tsx"
+
 export default function ScrollEffectOnReveal() {
   return (
     <>
-      <div className="space-y-2">
-        <h1>Reveal Effect On Scroll</h1>
-        <TutorialLink href="https://www.youtube.com/watch?v=hjbxaYTMhy0&list=PLA4qBVt61k3Phpwt7uqaptIg9NYZ5aNu_&index=1&pp=iAQB" />
-      </div>
+      <Heading
+        heading="Horizontal Scroll"
+        href={{
+          tutorial: youtubeUrl,
+          github: githubUrl,
+        }}
+      />
       <div className="space-y-4">
         <Reveal>
           <h2>Hey, You</h2>

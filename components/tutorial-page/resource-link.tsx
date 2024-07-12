@@ -2,13 +2,14 @@ import Link from "next/link"
 
 import { cn } from "@/lib/utils"
 
-import { ArrowRightUp } from "./icons"
+import { ArrowRightUp } from "../ui/icons"
 
 interface Props {
+  title: string
   href: string
   className?: string
 }
-export function TutorialLink({ href, className }: Props) {
+export function ResourceLink({ title, href, className }: Props) {
   return (
     <Link
       href={href}
@@ -18,7 +19,7 @@ export function TutorialLink({ href, className }: Props) {
         className
       )}
     >
-      Tutorial
+      {title}
       <ArrowRightUp className="size-4" />
     </Link>
   )
