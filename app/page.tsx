@@ -5,6 +5,10 @@ const links = [
     title: "Reveal Effect on scroll",
     href: "/reveal-effect-on-scroll",
   },
+  {
+    title: "Horizonstal Scroll",
+    href: "/horizontal-scroll",
+  },
 ]
 
 export default function Home() {

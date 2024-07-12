@@ -1,12 +1,17 @@
 "use client"
 
+import { TutorialLink } from "@/components/ui/tutorial-link"
+
 // import { CodeBlockContainer } from "./components/code-block"
 import { Reveal } from "./components/reveal"
 
 export default function ScrollEffectOnReveal() {
   return (
-    <main className="flex min-h-lvh flex-col gap-8 p-10">
-      <h1>Reveal Effect On Scroll</h1>
+    <>
+      <div className="space-y-2">
+        <h1>Reveal Effect On Scroll</h1>
+        <TutorialLink href="https://www.youtube.com/watch?v=hjbxaYTMhy0&list=PLA4qBVt61k3Phpwt7uqaptIg9NYZ5aNu_&index=1&pp=iAQB" />
+      </div>
       <div className="space-y-4">
         <Reveal>
           <h2>Hey, You</h2>
@@ -111,6 +116,6 @@ export default function ScrollEffectOnReveal() {
           </p>
         </div>
       </Reveal>
-    </main>
+    </>
   )
 }
