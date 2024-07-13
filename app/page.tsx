@@ -13,6 +13,10 @@ const links = [
     title: "Page Transition page router",
     href: "/page-transition-12",
   },
+  {
+    title: "Page Transition app router",
+    href: "/page-transition",
+  },
 ]
 
 export default function Home() {
@@ -27,6 +31,21 @@ export default function Home() {
             </li>
           )
         })}
+      </ul>
+      <ul>
+        <h2>Stuff to read</h2>
+        <li>
+          <Link href="https://next-view-transitions.vercel.app/">
+            NextJS View Transition
+          </Link>
+          <p className="ml-4 grid [&:not(:first-child)]:mt-0">
+            <span>This is a good article about view transition.</span>
+            <span>
+              This can be used to create a smooth transition between pages
+              without adding any other libraries.
+            </span>
+          </p>
+        </li>
       </ul>
     </main>
   )

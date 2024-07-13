@@ -34,7 +34,9 @@ export default function RootLayout({
             showSpinner={false}
           />
           <Header />
-          <div className="container flex-1">{children}</div>
+          <div id="page-transition-wrapper" className="container flex-1">
+            {children}
+          </div>
         </ThemeProvider>
       </body>
     </html>

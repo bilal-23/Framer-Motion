@@ -84,6 +84,9 @@
       "rlig" 1,
       "calt" 1;
     height: 100%;
+    transition-property: opacity, background, transform, filter;
+    transition-timing-function: ease-in-out;
+    transition-duration: 500ms;
   }
 
   h1 {
@@ -112,6 +115,15 @@
 @layer components {
   .inline-code {
     @apply relative rounded bg-muted px-[0.3rem] py-[0.2rem] font-mono text-sm font-semibold;
+  }
+}
+
+@layer utilities {
+  .page-transition {
+    opacity: 0;
+    background: var(--muted-foreground);
+    transform: translateY(10px);
+    filter: blur(12px);
   }
 }
 
