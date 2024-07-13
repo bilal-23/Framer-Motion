@@ -9,6 +9,10 @@ const links = [
     title: "Horizonstal Scroll",
     href: "/horizontal-scroll",
   },
+  {
+    title: "Page Transition page router",
+    href: "/page-transition-12",
+  },
 ]
 
 export default function Home() {

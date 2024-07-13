@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 
 import { OutfitFont } from "@/lib/fonts"
 
-import "./globals.css"
+import "@/styles/globals.css"
 import NextTopLoader from "nextjs-toploader"
 
 import { cn } from "@/lib/utils"
